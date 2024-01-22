@@ -4,6 +4,7 @@
     <title>Assignment Fokir - Personal Portfolio Bootstrap Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -15,24 +16,24 @@
             <a class="logo" href="#">Fokir</a>
             <div class="navigation">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Testimonial</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#feedback">Testimonial</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="clear"></div>
         </div>
         <div class="hero">
             <h3>Hello i'm</h3>
             <h1>ALEX SMITH</h1>
-            <p>Professional Web Developer</p>
+            <p>Professional <span id="job">Web Developer</span></p>
         </div>
         <div class="tint"></div>
     </div>
 
-    <div class="about fixedWidth">
+    <div id="about" class="about fixedWidth">
         <div class="border"></div>
         <div class="image">
             <img src="images/about.jpg">
@@ -89,7 +90,7 @@
         <div class="clear"></div>
     </div>
 
-    <div class="services">
+    <div id="services" class="services">
         <div class="fixedWidth">
             <h2>Our Services</h2>
             <div class="short"></div>
@@ -126,7 +127,7 @@
 
     </div>
 
-    <div class="portfolio fixedWidth">
+    <div id="portfolio" class="portfolio fixedWidth">
         <h2>Our Portfolio</h2>
         <div class="short"></div>
         <div class="long"></div>
@@ -216,7 +217,7 @@
         </div>
     </div>
 
-    <div class="feedback">
+    <div id="feedback" class="feedback">
         <h2>Client's Feedback</h2>
         <div class="short"></div>
         <div class="long"></div>
@@ -238,7 +239,7 @@
         </div>
     </div>
 
-    <div class="blog">
+    <div id="blog" class="blog">
         <div class="fixedWidth">
             <h2>Our Blog</h2>
             <div class="short"></div>
@@ -290,7 +291,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div id="contact" class="contact">
         <h2>Contact Us</h2>
         <div class="short"></div>
         <div class="long"></div>
@@ -316,6 +317,16 @@
     </div>
 
     <i class="fad fa-trophy-alt"></i>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#job', {
+          strings: ['web developer', 'web designer', 'freelancer'],
+          typeSpeed: 200,
+          loop: true,
+          backSpeed: 100
+        });
+      </script>
 </body>
 
 </html>
