@@ -1,0 +1,62 @@
+@media screen and (max-width:979px) and (min-width:768px) {
+    .services .items .item {
+        width: 50%;
+    }
+
+    .portfolio .items .item {
+        width: 50%;
+    }
+
+    .feedback .box {
+        width: 80%;
+    }
+
+    .contact {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .about .image {
+        width: 100%;
+    }
+
+    .about .border {
+        height: 50%;
+        width: 100%;
+        top: 2%;
+        left: -8%;
+    }
+
+    .about .intro {
+        width: 100%;
+    }
+
+    .services .item {
+        width: 100%;
+    }
+
+    .portfolio .item {
+        width: 100%;
+    }
+
+    .stats .item {
+        width: 100%;
+    }
+
+    .feedback .box {
+        width: 80%;
+    }
+
+    .blog .item {
+        width: 100%;
+    }
+
+    .contact {
+        width: 80%;
+    }
+
+    .contact form .mv {
+        width: 100%;
+    }
+}
